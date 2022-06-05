@@ -354,4 +354,10 @@ div#slider figure {
   .footer-container {
     justify-content: left;
   }
+
+  .about_content {
+    width: 90%;
+    height: auto;
+    font-size: 24px;
+  }
 }
