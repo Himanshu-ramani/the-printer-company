@@ -99,17 +99,7 @@ nav h1 {
 /*  */
 @keyframes slidy {
 
-  /* 0% {
-    left: 25%;
-  }
 
-  20% {
-    left: 50%;
-  }
-
-  25% {
-    left: 100%;
-  } */
   0% {
     transform: translateX(-900px);
   }
@@ -127,16 +117,22 @@ nav h1 {
 
 div#slider {
   overflow: hidden;
+  /* height: 100px; */
 }
 
 div#slider figure img {
-  width: 33%;
-  /* height: 50px; */
-  float: left;
+
+  height: 50px;
+
+
+  overflow: hidden;
 }
 
 div#slider figure {
+  overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   margin: 0;
   left: 0;
