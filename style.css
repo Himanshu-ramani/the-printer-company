@@ -6,6 +6,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+
+body {
   font-family: "Dongle", sans-serif;
 }
 
@@ -24,12 +28,23 @@ nav {
   background: #edeff1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
   position: fixed;
+  z-index: 10;
+}
+
+.brand h2 {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.why_rent {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
 }
 
 nav h1 {
   font-size: 36px;
   margin-left: 20px;
-  /* font-family: 'Roboto', sans-serif; */
+
 }
 
 .nav-list {
@@ -83,7 +98,8 @@ nav h1 {
 
 /*  */
 @keyframes slidy {
-  0% {
+
+  /* 0% {
     left: 25%;
   }
 
@@ -91,8 +107,22 @@ nav h1 {
     left: 50%;
   }
 
-  /* 25% { left: -100%; } */
+  25% {
+    left: 100%;
+  } */
+  0% {
+    transform: translateX(-900px);
+  }
 
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+.nav-list a {
+  color: black;
+  text-decoration: none;
 }
 
 div#slider {
@@ -100,7 +130,8 @@ div#slider {
 }
 
 div#slider figure img {
-  width: 20%;
+  width: 33%;
+  /* height: 50px; */
   float: left;
 }
 
@@ -241,13 +272,14 @@ div#slider figure {
 }
 
 .footer-copyright {
+  font-family: "Dongle", sans-serif;
   height: 100px;
   font-size: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+
   background: #5a60667a;
 }
 
